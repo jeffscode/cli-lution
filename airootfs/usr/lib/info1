@@ -1,0 +1,31 @@
+ ------------------------------------------------------------------------
+ ------------------  CLI/Lution Alpha Installer  ------------------------ 
+ ---------------------------- English -----------------------------------
+
+ To start text to speech, run "starttts" to stop run "stoptts" commands.
+
+ Lution needs a wired network connection to run without intervention.
+
+ To use wireless, you must establish a connection before running lution.
+
+ Run "wifi-menu" to setup wireless, or "wirelessinfo" for more info.
+
+ To start the installation, run the "lution" command.
+
+ To close nano, press the [Ctrl] + [x] keys. 
+ 
+ To close other programs, press the [Q] and/or [enter] keys.
+
+ You are in tty1. To open another, press [Ctrl] + [Alt] + [F2] - [F6]. 
+ 
+ The system username is "root" with no password.
+
+ To shutdown, use the "poweroff" command.
+
+ To see this message again, run the "i1" command.
+
+
+ Please provide feedback and suggestions at:
+      www.evolutionlinux.com/forums
+
+ Have Fun!

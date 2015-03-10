@@ -1,0 +1,30 @@
+ ---------------------------------------------------------------------------
+ ---------------------  CLI/Lution Alpha Installer  ------------------------ 
+ ---------------------------------- German ---------------------------------
+ Um Text in Sprache zu starten, führen " starttts " Befehle run " stoptts " 
+ zu stoppen.
+ Lution braucht eine verkabelte Netzwerkverbindung , um ohne Eingriff laufen.
+
+ Um die Wireless verwenden, müssen Sie die Verbindung , bevor Sie lution zu 
+ etablieren.
+ Run " wifi-menu " , um das Setup Wireless oder " wirelessinfo " für weitere 
+ Informationen.
+ Um die Installation zu starten , führen Sie den Befehl "lution" .
+
+ Um nano zu schließen, drücken Sie die Tastenkombination [ctrl] + [x] drücken.
+ 
+ Um andere Programme zu schließen , drücken Sie die [q] und / oder [Enter] 
+ drücken.
+ Sie sind in tty1. Zum anderen zu öffnen, drücken Sie [Ctrl]+[Alt]+[F2]-[F6].
+ 
+ Das System Benutzername ist "root" ohne Passwort.
+
+ Zum Herunterfahren, verwenden Sie den Befehl "poweroff".
+
+ Um diese Meldung wieder zu sehen, führen Sie den Befehl "i2".
+
+
+ Bitte geben Sie Feedback und Anregungen an :
+      www.evolutionlinux.com/forums
+
+ Viel Spaß!

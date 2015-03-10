@@ -1,0 +1,31 @@
+ ---------------------------------------------------------------------------------
+ ------------------------  CLI/Lution Alpha Installer  --------------------------- 
+ ---------------------------------- Hungarian--------------------------------------
+
+ Kezdeni text to speech , fuss " starttts " megállítani run " stoptts " parancsokat.
+
+ Lalásával szüksége a vezetékes hálózati kapcsolat beavatkozás nélkül működni.
+
+ Hogy vezeték nélküli , létre kell hoznia a kapcsolatot futtatása előtt lalásával.
+
+ Run " wifi - menü" , hogy beállít vezeték nélküli , vagy " wirelessinfo " bővebben.
+
+ A telepítés indításához futtassa a " lution " parancsot .
+
+ Bezárásához nano , nyomja meg a [Ctrl] + [x] billentyűket .
+ 
+ Zárjon be más programok , nyomja meg a [Q] és / vagy [Enter] gombokat .
+
+ Ön a tty1 . Megnyitnia egy másik , nyomja meg a [Ctrl] + [Alt] + [F2] - [ F6].
+ 
+ A rendszer felhasználónév " root" jelszó nélkül .
+
+ Shutdown , használja a " poweroff " parancsot .
+
+ Ha látni többé ez az üzenet , futtassa a " i10 " parancsot .
+
+
+ Kérjük, adja meg észrevételeit és javaslatait a :
+      www.evolutionlinux.com/forums
+
+ Jó szórakozást !

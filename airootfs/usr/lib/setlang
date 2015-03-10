@@ -1,0 +1,30 @@
+ ----------------------------------------------------------------------------
+ ---------------------  CLI/Lution Alpha Installer  -------------------------
+ ----------------------------------------------------------------------------
+
+ To start text to speech, run "starttts" to stop run "stoptts" commands.
+
+ English    = English    en_US.UTF-8 = Enter language code: .............. l1
+ German     = Deutsch    de_DE.UTF-8 = Geben Sie den Sprachcode: ......... l2
+ Dutch      = Nederlands nl_NL.UTF-8 = Voer taalcode: .................... l3
+ Greek      = ελληνικά   el_GR.UTF-8 = Εισάγετε κωδικό γλώσσας: .......... l4
+ Norwegian  = norsk      nn_NO.UTF-8 = Skriv inn språkkoden: ............. l5
+ Italian    = italiano   it_IT.UTF-8 = Inserisci il codice della lingua: . l6
+ Spanish    = español    es_ES.UTF-8 = Introduce el código de idioma: .... l7
+ Russian    = русский    ru_RU.UTF-8 = Введите код языка: ................ l8
+ Polish     = polski     pl_PL.UTF-8 = Wpisz kod języka: ................. l9
+ Hungarian  = magyar     hu_HU.UTF-8 = Adja nyelv kód: .................. l10
+ Portuguese = português  pt_PT.UTF-8 = Wpisz kod języka: ................ l11
+
+ For information enter: .................. i1
+ Weitere Informationen geben: ............ i2
+ Voor informatie in te voeren: ........... i3
+ Για πληροφορίες πληκτρολογήστε: ......... i4
+ For informasjon inn: .................... i5
+ Per informazioni digitare: .............. i6
+ Para más información entrar en: ......... i7
+ Для получения информации введите: ....... i8
+ Aby uzyskać więcej informacji wpisz: .... i9
+ Tájékoztatásul be: ..................... i10
+ Para obter informações , digite: ....... i11
+

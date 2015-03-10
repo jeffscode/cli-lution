@@ -1,0 +1,34 @@
+ ------------------------------------------------------------------------
+ ------------------  CLI/Lution Alpha Installer  ------------------------ 
+ ----------------------------- Polish -----------------------------------
+
+ Aby rozpocząć tekstu na mowę , które są prowadzone " starttts " zatrzymać run 
+ "stoptts" poleceń .
+
+ Czość potrzebuje połączenia z siecią przewodową , aby uruchomić bez interwencji.
+
+ Aby korzystać z sieci bezprzewodowej , musisz nawiązać połączenie przed 
+ uruchomieniem czość .
+
+ Uruchom " wifi - menu" do konfiguracji bezprzewodowej , lub " wirelessinfo " 
+ aby uzyskać więcej informacji .
+
+ Aby rozpocząć instalację, uruchom polecenie " lution " .
+
+ Aby zamknąć nano , naciśnij [Ctrl] + [ x ] kluczy .
+ 
+ Aby zamknąć inne programy , naciśnij [q ] i / lub [ Enter] .
+
+ Jesteś w tty1 . Aby otworzyć kolejny , naciśnij [Ctrl] + [Alt] + [F2] - [F6].
+ 
+ Nazwa użytkownika systemu jest "root " bez hasła .
+
+ Do wyłączenia , należy użyć polecenia " poweroff " .
+
+ Aby ponownie tego komunikatu , uruchom polecenie " i9 " .
+
+
+ Proszę podać opinie i sugestie na :
+      www.evolutionlinux.com/forums
+
+ Baw się dobrze!

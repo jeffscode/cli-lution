@@ -1,0 +1,31 @@
+ ----------------------------------------------------------------------------------
+ -------------------------  CLI/Lution Alpha Installer ---------------------------- 
+ ------------------------------------ Nynorsk -------------------------------------
+
+ Å starte tekst til tale, for å kjøre " starttts " stoppe run " stoptts " kommandoer.
+
+ Rensning trenger en kablet nettverkstilkobling for å kjøre uten intervensjon .
+
+ For å bruke trådløst , må du etablere en forbindelse før du kjører oppløsning.
+
+ Kjør " wifi - meny " for å sette opp trådløst , eller " wirelessinfo " for mer info.
+
+ For å starte installasjonen , kjør " lution " -kommandoen .
+
+ For å lukke nano , trykker du på [Ctrl] + [x ] tastene .
+ 
+ Lukke andre programmer , trykker du på [ q ] og / eller [ enter] tastene .
+
+ Du er i tty1 . Å åpne en annen , trykk [ Ctrl] + [ Alt] + [ F2 ] - [ f6 ] .
+ 
+ Systemet brukernavn er "root" uten passord .
+
+ Til nedleggelse , bruk " avskruing " -kommandoen .
+
+ For å se denne meldingen igjen , kjør " i5 " kommandoen .
+
+
+ Vennligst gi tilbakemeldinger og forslag til :
+      www.evolutionlinux.com/forums
+
+ Ha det moro !

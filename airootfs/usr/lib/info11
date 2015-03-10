@@ -1,0 +1,31 @@
+ -------------------------------------------------------------------------------
+ -----------------------  CLI/Lution Alpha Installer  -------------------------- 
+ ---------------------------------- Portuguese ---------------------------------
+ Para iniciar o texto para fala , execute "starttts" para parar de correr "stoptts" 
+ comandos.
+
+ Lution precisa de uma conexão de rede com fio para funcionar sem intervenção.
+
+ Para usar sem fio, você deve estabelecer uma conexão antes de executar lução .
+
+ Run " wifi-menu" a configuração sem fio, ou " wirelessinfo " para mais informações.
+
+ Para iniciar a instalação , execute o comando " lution " .
+
+ Para fechar nano, pressione o botão  [X] + [ Ctrl] teclas.
+ 
+ Para fechar outros programas , pressione a tecla [ q ] e / ou [enter] chaves.
+
+ Você está em tty1 . Para abrir outro , pressione [Ctrl] + [Alt] + [F2] - [F6] .
+ 
+ O nome de usuário do sistema é " root" sem senha.
+
+ Para encerrar , use o comando " poweroff " .
+
+ Para ver esta mensagem novamente , execute o comando "info11" .
+
+
+ Por favor, fornecer feedback e sugestões em:
+      www.evolutionlinux.com/forums
+
+ Diverta-Se!

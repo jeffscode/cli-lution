@@ -1,0 +1,164 @@
+# !/bin/bash
+#
+# CLI/Lution initialization script (version alpha 03.10.2015)
+#
+# Derived from Lution-AIS initialisation script originally written by Carl Duff for Evo/Lution Linux.
+#
+# Modified and renamed by Jeff Story for CLI/Lution.
+#
+# This script will automatically download the latest versions of the installer
+# from github before executing it.
+#
+# This program is free software, provided under the GNU General Public License
+# as published by the Free Software Foundation. So feel free to copy, distribute,
+# or modify it as you wish.
+#
+
+VERSION="Lution-AIS Initialization Script 0.1"
+ANSWER="/tmp/.lution"
+
+### Check user is root.
+
+  dialog --backtitle "$VERSION" --title " Evo/Lution " --infobox "\nPlease wait... 
+                                                                  \nEven geduld aub... 
+                                                                  \nBitte warten... 
+                                                                  \nΠαρακαλώ περιμένετε... 
+                                                                  \nAttendere prego... 
+                                                                  \nVennligst Vent... 
+                                                                  \nProszę czekać...
+                                                                  \nПодождите, пожалуйста... 
+                                                                  \nPor favor espera...\n" 0 0
+  sleep 2
+  if [[ $(whoami) != "root" ]]; then
+  dialog --backtitle "$VERSION" --title " Error " --msgbox "\n- The installer must be run as root.
+                                                            \n- Je moet aangemeld zijn als ROOT.
+                                                            \n- Der Installer muss mit Superuser-Rechten gestartet werden.
+                                                            \n- Τον εγκαταστάτη πρέπει να εκτελούνται ως root.
+                                                            \n- L'installer deve essere eseguito come Root.
+                                                            \n- Installereren må kjøres som root.
+                                                            \n- Instalator musi być uruchomiony z konta administratora (root).
+                                                            \n- Установщик должен выполняться только администратором системы (пользователем root).
+                                                            \n- El instalador debe ejecutarse como root.\n" 0 0
+  exit 1
+  fi
+
+### Check that there is an active internet connection
+
+  if [[ ! $(ping -c 1 google.com) ]]; then
+  dialog --backtitle "$VERSION" --title " Error " --msgbox "\n- Internet connection test failed.
+                                                            \n- Test internetverbinding mislukt.
+                                                            \n- Es konnte keine Verbindung zum Internet hergestellt werden.
+                                                            \n- οκιμή σύνδεσης στο Internet απέτυχε.
+                                                            \n- Il test della connessione ad Internet è fallito.
+                                                            \n- Internett tilkobling feilet.
+                                                            \n- Test połączenia z Internetem nie powiódł się.
+                                                            \n- Нет соединения с Интернетом.
+                                                            \n- Prueba de conexión a Internet fallida.\n" 0 0
+  exit 1
+  fi
+
+### If both tests above passed, menu below will ask user to select Stable or Dev version of installer.
+
+  dialog --backtitle "$VERSION" --title " Installer Version " \
+  --menu $"\nPlease choose / Gelieve te kiezen / Bitte wählen / Παρακαλώ επιλέξτε / Scegli / Vennligst velg / Proszę wybrać / Пожалуйста, выберите / Por favor elija
+           \n\n1. Stable / stabiel / stabil / σταθερός / stabile / stabilny / стабильный / estable
+           \n\n2. Development / ontwikkeling / Entwicklung / ανάπτυξη / sviluppo / utvikling / rozwój / развитие / desarrollo\n" 20 50 2 \
+  "1" $"Stable" \
+  "2" $"Development" 2>${ANSWER}
+  case $(cat ${ANSWER}) in
+  "1") # Stable Version
+  clear
+  wget -N https://github.com/EvoLutionLinux/lution-ais/archive/master.zip 
+  ;;
+  "2") # Development Version
+  clear
+  wget -N https://github.com/CarlDuff/lution-ais/archive/master.zip
+  ;;
+  *) exit 0
+  ;;
+  esac
+
+### Whatever the choice, same process to unzip.
+
+  unzip -o master.zip -d /
+
+### Run lution-ais from file path if running in Evo/Lution.
+
+  if [[ $(uname -n) = "archiso" ]]; then
+  /lution-ais-master/lution-ais
+  fi
+
+### Move extracted contents to std locations if running in CLI/Lution.
+
+#  if [[ $(uname -n) = "cli-lution" ]]; then
+  if [[ $(uname -n) = "Arch2014p9" ]]; then
+  mv /lution-ais-master/lution-ais /usr/bin/lution-ais
+  mv /lution-ais-master /usr/lib/lution-ais-master
+  fi
+
+### Edit file paths in lution-ais to std locations if running in CLI/Lution.
+
+#  if [[ $(uname -n) = "cli-lution" ]]; then
+  if [[ $(uname -n) = "Arch2014p9" ]]; then
+  sed -i 's:/lution-ais-master/:/usr/lib/lution-ais-master/:' /usr/bin/lution-ais
+  fi
+
+### Change all leafpad commands to nano in lution-ais if running in CLI/Lution. [added g to get all per line]
+
+#  if [[ $(uname -n) = "cli-lution" ]]; then
+  if [[ $(uname -n) = "Arch2014p9" ]]; then
+  sed -i 's:leafpad:nano:g' /usr/bin/lution-ais 
+  fi
+
+### Change gparted command to fdisk in lution-ais if running in CLI/Lution.
+
+#  if [[ $(uname -n) = "cli-lution" ]]; then
+  if [[ $(uname -n) = "Arch2014p9" ]]; then
+  sed -i 's:gparted:fdisk:' /usr/bin/lution-ais
+  fi
+
+### Change GParted selection to FDisk in lution-ais if running in CLI/Lution.
+
+#  if [[ $(uname -n) = "cli-lution" ]]; then
+  if [[ $(uname -n) = "Arch2014p9" ]]; then
+  sed -i 's:GParted:FDisk:' /usr/bin/lution-ais
+  fi
+
+### Change BIOS & UEFI to BIOS/MBR dialog in lution-ais if running in CLI/Lution.
+
+#  if [[ $(uname -n) = "cli-lution" ]]; then
+  if [[ $(uname -n) = "Arch2014p9" ]]; then
+  sed -i 's: (GUI - BIOS & UEFI):   (CLI - BIOS/MBR):' /usr/bin/lution-ais
+  fi
+
+### Edit GParted comment in translation files if running in CLI/Lution. 
+
+#  if [[ $(uname -n) = "cli-lution" ]]; then
+  if [[ $(uname -n) = "Arch2014p9" ]]; then
+  sed -i 's:nGParted.* systems.:nSelect your preferred partitioning tool.:' /usr/lib/lution-ais-master/english.trans
+  sed -i 's:nGParted.* unterstüzt.:nWählen Sie Ihre bevorzugte Partitionierungswerkzeug .:' /usr/lib/lution-ais-master/german.trans
+  sed -i 's:nGParted.* ondersteunt.:nSelecteer uw partitioneringstool voorkeur.:' /usr/lib/lution-ais-master/dutch.trans
+  sed -i 's:nGParted είναι ένα συνιστώμενο φιλικό προς το χρήστη γραφικό εργαλείο που υποστηρίζει το BIOS και επισης συστήματα UEFI.:nΕπιλέξτε εργαλείο διαμέρισης που προτιμάται σας .:' /usr/lib/lution-ais-master/greek.trans
+  sed -i 's:nGparted er ett anbefalt brukervennlig, grafisk verktøy som støtter både BIOS og UEFI system.:nVelg ønsket partisjoneringsverktøy .:' /usr/lib/lution-ais-master/norwegian.trans
+  sed -i 's:nGParted è uno strumento grafico intuitivo e consigliato che supporta sia i sistemi BIOS che quelli UEFI.:nSelezionate lo strumento di partizionamento preferito .:' /usr/lib/lution-ais-master/italian.trans
+  sed -i 's:nGParted.* egyaránt.:nVálassza ki a kívánt particionáló eszköz .:' /usr/lib/lution-ais-master/hungarian.trans
+  sed -i 's:nGParted.* BIOS .:nSeleccione su herramienta de particionamiento preferido .:' /usr/lib/lution-ais-master/spanish.trans
+  sed -i 's:nGParted - рекомендуемый удобный графический инструмент для разбиения дисков на разделы. Он работает и на системах BIOS, и на системах UEFI.:nВыберите нужный инструмент для создания разделов .:' /usr/lib/lution-ais-master/russian.trans
+  sed -i 's:nGParted jest zalecanym, łatwym w obsłudze, graficznym narzędziem, które obsługuje system BIOS i UEFI.:nWybierz preferowany narzędzie do partycjonowania.:' /usr/lib/lution-ais-master/polish.trans
+  sed -i 's:nGParted é uma ferramenta gráfica amigável que é recomendada e que suporta ambos os sistemas de BIOS e UEFI.:nSelecione sua ferramenta de particionamento preferido.:' /usr/lib/lution-ais-master/portuguese.trans
+  fi
+
+### Remove " >/dev/null 2>&1 " from FDisk line in lution-ais if running in CLI/Lution.
+
+#  if [[ $(uname -n) = "cli-lution" ]]; then
+  if [[ $(uname -n) = "Arch2014p9" ]]; then
+  sed -i 's:"1") fdisk ${DEVICE} >/dev/null 2>&1:"1") fdisk ${DEVICE}:' /usr/bin/lution-ais
+  fi        
+
+### Run lution-ais from shell path for CLI/Lution.
+
+#  if [[ $(uname -n) = "cli-lution" ]]; then
+  if [[ $(uname -n) = "Arch2014p9" ]]; then
+  lution-ais
+  fi
+

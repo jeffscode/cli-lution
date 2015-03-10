@@ -1,0 +1,31 @@
+ ------------------------------------------------------------------------
+ ------------------  CLI/Lution Alpha Installer  ------------------------ 
+ ------------------------------ Dutch -----------------------------------
+
+ Om tekst naar spraak start , run " starttts " run " stoptts " commando's te stoppen.
+
+ Lution heeft een bekabelde netwerkverbinding te lopen zonder tussenkomst .
+
+ Om draadloos te gebruiken , moet u een verbinding voordat u lution vestigen .
+
+ Run " wifi - menu" te installeren draadloos , of " wirelessinfo " voor meer info .
+
+ Om de installatie te starten , voert u de " lution " commando .
+
+ Om nano sluiten , drukt u op de [Ctrl] + [x] toetsen .
+ 
+ Om andere programma's te sluiten , drukt u op de [q] en / of [Enter] .
+
+ Je bent in tty1 . Om een ​​ander te openen , drukt u op [Ctrl] + [Alt] + [F2] - [F6] .
+ 
+ Het systeem gebruikersnaam is "root" zonder wachtwoord .
+
+ Om af te sluiten , gebruik dan de "poweroff " commando .
+
+ Om dit bericht weer te zien , lopen de "i3" commando .
+
+
+ Geef feedback en suggesties op :
+      www.evolutionlinux.com/forums
+
+ Veel Plezier!
