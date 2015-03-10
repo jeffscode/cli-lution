@@ -2,7 +2,7 @@
 
 This is the archiso build for CLI/Lution.
 
-It runs in root, no password. Boots diretly to console with choice of setting desired resolution.
+It runs in root, no password. Boots directly to console with choice of setting desired resolution.
   
 Download iso: http://sourceforge.net/projects/evolutionlinux/files/CLI-Lution-alpha/
 
